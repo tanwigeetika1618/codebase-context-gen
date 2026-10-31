@@ -1,0 +1,42 @@
+{
+  "name": "codebase-context-gen",
+  "version": "1.0.0",
+  "description": "🧠 Generate a compact AI-friendly context file from any codebase using static analysis — zero AI tokens, 10x faster onboarding.",
+  "type": "module",
+  "bin": {
+    "ctx-gen": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "codebase",
+    "context",
+    "onboarding",
+    "static-analysis",
+    "developer-tools"
+  ],
+  "author": "Tanvi Geetika",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "boxen": "^7.1.1",
+    "ora": "^7.0.1",
+    "commander": "^12.0.0",
+    "glob": "^10.3.10",
+    "ts-morph": "^21.0.1",
+    "gradient-string": "^2.0.2",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.11.0",
+    "@types/figlet": "^1.5.8",
+    "@types/gradient-string": "^1.1.5"
+  }
+}
